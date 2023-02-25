@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.loder-container{
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(4, 224, 188) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.loder-container div{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.loder1,
+.loder2,
+.loder3,
+.loder4,
+.loder5,
+.loder6,
+.loder7,
+.loder8,
+.loder9,
+.loder10{
+    animation: loder .7s linear  .5s infinite;
+}
+
+
+.loder2{
+    animation-delay:  .9s;
+}
+.loder3{
+    animation-delay:  1.3s;
+}
+.loder4{
+    animation-delay: 1.7s;
+}
+.loder5{
+    animation-delay: 2.1s;
+}
+.loder6{
+    animation-delay :2.4s;
+}
+.loder7{
+    animation-delay :2.7s;
+}
+.loder8{
+    animation-delay: 3.1s;
+}
+.loder9{
+    animation-delay :3.4s;
+}
+.loder10{
+    animation-delay:3.7s;
+}
+
+
+@keyframes loder{
+    0%{
+        transform: translateY(0);
+    }
+    
+    50%{
+        transform: translateY(-20px);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+}

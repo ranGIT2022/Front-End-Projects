@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>card Slider </title>
+
+
+
+  <!--google  font-->
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;700&family=Poppins&family=Press+Start+2P&family=Sacramento&family=Ubuntu&display=swap"
+    rel="stylesheet">
+
+  <!-- swiper lib -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+
+        <div class="card">
+          <div class="card-img">
+            <img src="image/card img 1.jpg" alt="card image">
+            <ul class="card-tags">
+              <li>Web Design</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+
+          <div class="card-info">
+            <h4 class="card-title">Web Diary</h4>
+            <p> something you can expect by subscribing to this channel are HTML begginer to pro videos,CSS begginer to
+              pro videos,CSS tricks,
+              CSS updates,HTML updates,etc
+            </p>
+            <a href="" class="card-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="swiper-slide">
+
+        <div class="card">
+          <div class="card-img">
+            <img src="image/card img 2.jpg" alt="card image">
+            <ul class="card-tags">
+              <li>Web Design</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+
+          <div class="card-info">
+            <h4 class="card-title">Web Diary</h4>
+            <p> something you can expect by subscribing to this channel are HTML begginer to pro videos,CSS begginer to
+              pro videos,CSS tricks,
+              CSS updates,HTML updates,etc
+            </p>
+            <a href="" class="card-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="swiper-slide">
+
+        <div class="card">
+          <div class="card-img">
+            <img src="image/card img 3.jpg" alt="card image">
+            <ul class="card-tags">
+              <li>Web Design</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+
+          <div class="card-info">
+            <h4 class="card-title">Web Diary</h4>
+            <p> something you can expect by subscribing to this channel are HTML begginer to pro videos,CSS begginer to
+              pro videos,CSS tricks,
+              CSS updates,HTML updates,etc
+            </p>
+            <a href="" class="card-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--  -->
+
+      <div class="swiper-slide">
+
+        <div class="card">
+          <div class="card-img">
+            <img src="image/card img 1.jpg" alt="card image">
+            <ul class="card-tags">
+              <li>Web Design</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+
+          <div class="card-info">
+            <h4 class="card-title">Web Diary</h4>
+            <p> something you can expect by subscribing to this channel are HTML begginer to pro videos,CSS begginer to
+              pro videos,CSS tricks,
+              CSS updates,HTML updates,etc
+            </p>
+            <a href="" class="card-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="swiper-slide">
+
+        <div class="card">
+          <div class="card-img">
+            <img src="image/card img 2.jpg" alt="card image">
+            <ul class="card-tags">
+              <li>Web Design</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+
+          <div class="card-info">
+            <h4 class="card-title">Web Diary</h4>
+            <p> something you can expect by subscribing to this channel are HTML begginer to pro videos,CSS begginer to
+              pro videos,CSS tricks,
+              CSS updates,HTML updates,etc
+            </p>
+            <a href="" class="card-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="swiper-slide">
+
+        <div class="card">
+          <div class="card-img">
+            <img src="image/card img 3.jpg" alt="card image">
+            <ul class="card-tags">
+              <li>Web Design</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+
+          <div class="card-info">
+            <h4 class="card-title">Web Diary</h4>
+            <p> something you can expect by subscribing to this channel are HTML begginer to pro videos,CSS begginer to
+              pro videos,CSS tricks,
+              CSS updates,HTML updates,etc
+            </p>
+            <a href="" class="card-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev swiper-btn"></div>
+    <div class="swiper-button-next swiper-btn"></div>
+
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: false,
+
+      slidesPerView: 3,
+      spaceBetween: 38,
+
+      
+      // Responsive breakpoints
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        },
+        // when window width is >= 767px
+        767: {
+          slidesPerView: 2,
+          spaceBetween: 38
+        },
+        // when window width is >= 992px
+       992: {
+          slidesPerView: 3,
+          spaceBetween:38
+        }
+      },
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
+
+</body>
+
+</html>

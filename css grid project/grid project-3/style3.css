@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span{margin: 10px;}
+
+.container{
+  
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 4fr 1.2fr 1.2fr;
+
+}
+.item1{
+    background-color: #e6f0ef;
+    /* grid-column: 1/3;==>grid-column-start=1 and grid-column-end=3 seperate kodukkunnathin pakaram use cheyaam */
+    /* mukalile grid-column: 1/3; 
+    and grid-row:something enningane kodukkunnathin pakaram 4 valuw\esum orumich kodukkan refer the code below */
+    
+    grid-area:1/1/2/3; /*first two values are starting number of row and column then the end vales of both*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 125px;
+
+}
+.item2{
+     grid-column:3/4;
+     display: flex;
+    justify-content:flex-end;
+    align-items: center;}
+.item3{
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    padding:0 125px;
+
+    
+}
+.item3 h1{
+    margin-bottom: 50px;
+}
+
+.item4{
+    grid-area: 3/1/4/3;
+   
+    background-color: #e6f0ef;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 125px;
+
+}
+.item5{
+    grid-area: 2/3/5/4;
+
+    
+}
+.item5 img{
+    width: 100%;
+    height: 100%;
+}
+
+.item6{
+
+    grid-area: 4/1/5/2;
+   
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 125px;
+}
+
+.item7{
+    grid-area: 4/2/5/3;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 125px;
+}
+

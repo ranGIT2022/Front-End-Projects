@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: skyblue;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color:white;
+    margin: 50px 5px 5px;
+                                    /* animation: name-of-animation   duration    timing-function    delay(eppozhan thudangendath)    animation-iteration-count(repeat which can assign any numbers  or simply infinite) ;*/
+                                    /* animation: expand 1s linear ; */
+                                    /* animation: expand 1s ease; */
+  /* animation: expand 5s ease-in 1s infinite ; */
+                                            /* animation: expand 1s ease-out; */
+                                            /* animation: expand 1s ease-in-out; */
+     transition: 3s ease-in;
+}
+
+
+div:hover{
+    /*animation-play-state: paused;infinitive move ne mouse over  cheyyumbol pause akaan*/
+    background-color: purple;
+    /* transform: rotate(45deg); */
+    /* transform:rotateX(180deg);  */
+    /* transform: rotateY(180deg); */
+    /* transform: rotateZ(180deg); */
+    
+    /* transform: scale(1.1) rotate(45deg); */
+    /* transform: scaleY(1.1) rotateY(180deg); */
+    /* transform: scaleX(1.1) rotateX(180deg); */
+    /* transform: scaleZ(1.1) rotateZ(180deg); */
+
+    /* transform: skew(45deg); */
+    /* transform: skewX(45deg); */
+    /* transform: skewY(45deg); */
+
+    /* transform: translateX(50px); */
+    /* transform: translatey(50px); */
+    /* transform: translate(50px,50px); */
+    /* transform: translateZ(50px); */
+
+    /* transform-origin: top left; */  /* transform normally orgin cheyyaanaayi  edukkunnath division te center aan athinaal thanne skew function cheyyumbol oru side widndowil ninn hide aakaarund so skew nodoppam upayokikaam*/
+
+}
+
+@keyframes expand{
+
+    /* from{
+        width: 200px;
+    }
+    to{
+        width: 600px;
+    } */
+
+    /* from to methodil to vil ethya udane animation speedy aayi from ilekk varunnathinaal not good to see so that we can use percentage method to make a rhythmatic move */
+
+    0%{
+        width: 200px;
+        height: 50vh;
+        /* background-color: orange; */
+    }
+    50%{
+        width: 600px;
+        height: 100vh;
+        /* background-color: pink; */
+    }
+    100%{
+        width: 200px;
+        height: 50vh;
+    }
+
+}

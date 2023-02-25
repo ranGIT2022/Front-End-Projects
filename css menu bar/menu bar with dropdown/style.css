@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:honeydew ;
+    height: 100vh;
+}
+
+/* navbar ==================================================================================================================== */
+
+nav{
+    padding: 10px;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    box-shadow: 0 5px 9px rgba(0, 0, 0, .2);
+    border-radius: 2px;
+    position: relative;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* navbar logo ==================================================================================================================== */
+
+.nav-logo{
+    position: relative;
+}
+
+.nav-logo img{
+    position: absolute;
+    left: 100px;
+    top: -25px;
+}
+
+
+/* navbar heading ==================================================================================================================== */
+
+header{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px grey;
+
+}
+header:hover{
+    color: rgb(31, 73, 31);
+}
+
+/* navbar menu ====================================================================================================================*/
+
+.nav-ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-li{
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.nav-li:hover{
+    background-color: #dbe7ec;
+    
+}
+
+.nav-li a{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    color: black;
+}
+.nav-li a:hover{
+    font-size: 1.2rem;
+}
+
+/* navbar-menu-submenu ============================================================================================================= */
+.product{
+    list-style: none;
+    display: none;
+    position: absolute;
+    transform: translateX(-7%);
+    background-color: #f0d5b8;
+    padding: 10px 3px 10px 10px;
+    border-radius: 5px;
+    text-align: right;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+    
+
+}
+
+.nav-ul  li:nth-child(2):hover .product{
+
+    display: block;
+
+
+    
+    
+}
+
+/* navbar-menu-super sub menu */
+
+.tablet{
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    display: none;
+    position: absolute;
+    transform: translateX(-100%) translateY(-35%);
+    padding: 20px;
+
+}
+.tablet li:hover{
+    font-size: 1.2rem;
+
+}
+.product li:nth-child(3):hover .tablet{
+    display: block;
+    background-color: #f0d5b8;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+    padding: 5px;
+    
+}
+
+
+/* main section image */
+
+.main img{
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main{
+    position: relative;
+    overflow: hidden;
+}
+
+.container-main1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: wheat;
+}
+
+.gallary{
+    width: 80%;
+}
+.gallery-images{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.gallery-images li{
+  
+    flex: 1 1 300px;
+}
+
+
+.gallery-images img{
+    width: 100%;
+}

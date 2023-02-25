@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+:root {
+    /*ingane root ennezhuthi variables define cheythaal avaye global aayi use cheyyaam (eth selectorinum upayogikaam ennal rootil ezhuthunnathin  pakaram  oru selectorinte ullilaan define cheyyunnathenkeil aa variablein aaa classin mathrame use cheyyaan pattu  )*/
+    --h1-size: 50px;
+    --color: red;
+    --bgc: black;
+    --padding: 20px;
+}
+
+
+.heading1 {
+    color: var(--color);
+    font-size: var(--h1-size);
+    background-color: var(--bgc);
+    padding: var(--padding);
+}
+
+.heading2 {
+    --bgcolor:grey; /*we can create variables locally also but it could be useable only for those selector*/
+
+    color: blue;
+    font-size: var(--h1-size);
+    background-color: var(--bgcolor);
+    padding: var(--padding);
+}
+
+.heading3 {
+    color: green;
+    font-size: var(--h1-size);
+    background-color: var(--bgc);
+    padding: var(--padding);
+}
+
+.heading4 {
+    color: yellow;
+    font-size: var(--h1-size);
+    background-color: var(--bgc);
+    padding: var(--padding);
+}
+
+.heading5 {
+    color: pink;
+    font-size: var(--h1-size);
+    background-color: var(--bgc);
+    padding: var(--padding);
+}

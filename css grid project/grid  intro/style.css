@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 50px;
+}
+
+.wrapper {
+    background-color: lightgray;
+    max-width: 900px;
+    margin: auto;
+
+
+    display: grid;
+            /*1. grid-template-columns:1fr 1fr 1fr ; */
+            /*(100px 100px 100px)  instead of giving values in pixels in css-3 hava an  another unit "fr" which make the grid area in responsible way*/
+            /*2. if the columns are  in same width we could creat it as follow */
+    grid-template-columns: repeat(3, 1fr);
+            /* grid-template-rows: 100px 100px 100px; */
+            /* if the rows are in the same height we may  use the code below.  */
+    grid-auto-rows: 100px;
+            /* grid-column-gap: 20px;
+             grid-row-gap: 20px;    grid row and column gap same aanenkil we may use the code below */
+    grid-gap: 20px;
+
+}
+.wrapper .item1{
+    background-color: lightgreen;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}

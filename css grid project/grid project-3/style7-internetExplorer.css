@@ -1,0 +1,411 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
+.container {
+
+    height: 100vh;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr 4fr 1.2fr 1.2fr;
+    grid-template-rows: 1fr 4fr 1.2fr 1.2fr;
+        grid-template-areas:"logo    logo     header"
+                        "main    main     imgbox"
+                        "quates  quates   imgbox"
+                        "btn1    btn2     imgbox";
+
+}
+
+.item1 {
+    -ms-grid-row:1;
+    -ms-grid-column:1;
+    -ms-grid-column-span:2;
+    background-color: #b1dbd7;
+    grid-area:logo;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 125px;
+
+}
+
+.item2 {
+ -ms-grid-row: 1;
+ -ms-grid-column: 3;
+ grid-area: header;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: #7a9c98;
+}
+
+.item2 ul{
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+
+.item2 li{
+    margin: 10px;
+}
+
+.item2 ul li a{
+    -webkit-transition: color .2s ease-in ;
+    -o-transition: color .2s ease-in ;
+    transition: color .2s ease-in ;
+}
+
+.item2 ul li:hover a{
+    color: rgb(152, 221, 152);
+}
+
+
+.item3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: main;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0 125px;
+
+
+}
+
+.item3 h1 {
+    margin-bottom: 50px;
+}
+
+.item4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: quates;
+
+    background-color: #e6f0ef;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 125px;
+
+}
+
+.item5 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+    grid-area: imgbox;
+
+
+}
+
+.item5 img {
+    width: 100%;
+    height: 100%;
+}
+
+.item6 {
+
+    -ms-grid-row: 4;
+
+    -ms-grid-column: 1;
+
+    grid-area: btn1;
+
+    background-color: green;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 125px;
+}
+
+.item7 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: btn2;
+    background-color: lightgreen;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 125px;
+}
+.btn{
+    -webkit-transition: background-color  .2s ease-in-out;
+    -o-transition: background-color  .2s ease-in-out;
+    transition: background-color  .2s ease-in-out;
+}
+.btn:hover{
+    background-color:#7f8e8c;
+}
+
+.pop-in{
+    -webkit-animation: popin 2s cubic-bezier(0, -0.04, 0.32,1.28) forwards;
+            animation: popin 2s cubic-bezier(0, -0.04, 0.32,1.28) forwards;
+    opacity: 0;
+}
+
+.item3 h1{
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+}
+
+.item3 p{
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+
+@-webkit-keyframes popin{
+    from{
+        opacity: 0;
+        -webkit-transform: translateX(-100px) scale(.8);
+                transform: translateX(-100px) scale(.8);
+
+    }
+    to{
+        opacity: 1;
+        -webkit-transform: none;
+                transform: none;
+    }
+}
+
+@keyframes popin{
+    from{
+        opacity: 0;
+        -webkit-transform: translateX(-100px) scale(.8);
+                transform: translateX(-100px) scale(.8);
+
+    }
+    to{
+        opacity: 1;
+        -webkit-transform: none;
+                transform: none;
+    }
+}
+
+.slide-in{
+    -webkit-animation: slideIn 2s ease 1s forwards;
+            animation: slideIn 2s ease 1s forwards;
+    opacity: 0;
+}
+
+@-webkit-keyframes slideIn{
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(150px) skewY(20deg);
+                transform: translateX(150px) skewY(20deg);
+
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: none;
+                transform: none;
+    }
+}
+
+@keyframes slideIn{
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(150px) skewY(20deg);
+                transform: translateX(150px) skewY(20deg);
+
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: none;
+                transform: none;
+    }
+}
+
+
+/* responsive */
+
+
+
+@media (max-width:767px){
+    
+
+    .container{
+        height: auto;
+        -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2,1fr);
+            grid-template-areas: "logo      logo"
+                              "header   header"
+                              "imgbox   imgbox"
+                              "main     main " 
+                              "quates   quates"
+                              "btn1     btn2 "  ;
+        -ms-grid-rows: 100px 50px 50vh auto auto 70px;
+        grid-template-rows: 100px 50px 50vh auto auto 70px;
+
+    }
+
+   
+
+    .item1{
+        padding-left: 0;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .item2{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;   
+    }
+
+    
+    .item3{
+        padding: 50px 24px;
+    }
+
+    .item4{
+        padding: 20px 24px;
+    }
+
+    .item3 h1 {
+        margin-bottom: 12px;
+        font-size: 30px;
+        
+    }
+
+
+    .item6 {
+        padding-left: 0;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        
+        
+     
+    }
+
+    .item7 {
+        padding-left: 0;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        
+     
+    }
+    
+
+    .item1{
+        -ms-grid-row:1;
+        -ms-grid-column:1;
+        -ms-grid-column-span:2;
+
+    }
+    
+
+    .item2{
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+
+    }
+    
+
+    .item3{
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+
+    }
+    
+
+    .item4{
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+
+    }
+    
+
+    .item5{
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+
+    }
+    
+
+    .item6{
+        -ms-grid-row: 6;
+        -ms-grid-column: 1;
+
+    }
+    
+
+    .item7{
+        -ms-grid-row: 6;
+        -ms-grid-column: 2;
+
+    }
+    
+}
